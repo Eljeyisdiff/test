@@ -1,0 +1,15 @@
+- open and disable window
+
+- generate unique queues each office
+
+- add current queues table
+
+- add description column in offices table - "office_desc"
+
+mockup - https://www.canva.com/design/DAGRTCvMJrc/oF0vbXGq_pLMlWXRaabErA/edit
+
+
+
+Anna: Current Task - Modifying Sql Scripts and queue_api.php
+   
+

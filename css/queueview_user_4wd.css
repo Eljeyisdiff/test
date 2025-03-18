@@ -1,0 +1,16 @@
+.officewindows-container {
+    grid-template-columns: auto auto !important;
+    column-gap: 10px;
+}
+
+.officewindows-col {
+    display: grid;
+    row-gap: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    .officewindows-container {
+        grid-template-columns: auto !important;
+        column-gap: none;
+    }   
+}

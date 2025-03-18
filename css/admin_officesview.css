@@ -1,0 +1,461 @@
+html, body { 
+    margin: unset;
+    padding: unset;
+    background-color: #f4f6fc;
+    font-family: 'Atkinson Hyperlegible', 'Courier New', Courier, monospace;
+
+}
+
+h1, h2, h3, p {
+    margin: unset;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    background-color: #35408e;
+    border-bottom: 10px solid #ffd41c;
+    color: #ffffff;
+    min-height: 50px;
+    padding: 5px 30px;
+}
+
+.header h1, .header h2, header p {
+    margin: unset;
+}
+
+.header h2 {
+    font-size: 20px;
+}
+
+.user p .account-name {
+    font-weight: 700;
+}
+
+.header-left, .header-buttons, .user {
+    align-content: center;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-buttons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    margin-right: 50px;
+}
+
+.header-buttons a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header-buttons a h2 {
+    font-weight: 100;
+}
+
+.user p {
+    margin: unset;
+    align-content: center;
+    font-size: 18px;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.user .logout a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 15px;
+}
+
+.account-pic {
+    align-content: center;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+/* main content */
+
+.main {
+    padding: 0 30px;
+}
+
+.main-header h1 {
+    font-size: 25px;
+    color: #35408e;
+    margin-top: 28px;
+}
+
+.main-div {
+    border-bottom: 1px solid #d2d2db;
+    margin: 28px 0 15px 0;
+}
+
+.main-content-container {
+    display: grid;
+}
+
+/* offices */
+.offices-container {
+    border: 1px solid #d2d2db;
+    background-color: #ffffff;
+    padding: 15px 20px;
+    margin-bottom: 50px;
+}
+
+.offices-top-cont {
+    display: grid;
+    grid-template-columns: 80% auto;
+    gap: 12px;
+}
+
+.office-search {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    gap: 5px;
+    align-items: center;
+}
+
+.office-search i {
+    position: absolute;
+    padding: 5px 0 0 15px;
+    color: #5f6368;
+}
+
+.office-search .search-in input {
+    border: 1px solid #d2d2db;
+    width: 100%;
+    height: 35px;
+    font-family: 'Atkinson Hyperlegible', 'Courier New', Courier, monospace;
+    padding-left: 45px;
+    font-size: 15px;
+}
+
+.office-search .search-btn input {
+    border: 1px solid #d2d2db;
+    width: 100%;
+    height: 35px;
+    background-color: #35408e;
+    font-family: 'Atkinson Hyperlegible', 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.add-office {
+    display: flex;
+    border: 1px solid #d2d2db;
+    align-items: center;
+    justify-content: center;
+    color: #35408e;
+    cursor: pointer;
+}
+
+.add-office i {
+    margin-right: 5px;
+}
+
+.add-office p {
+    margin-right: 5px;
+}
+
+/* office list proper */
+.office-dt-container {
+    margin-top: 15px;
+    display: grid;
+    gap: 10px;
+}
+
+.office-dt-element {
+    border: 1px solid #d2d2db;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 25px;
+    align-items: center;
+}
+
+.office-dt-left {
+    max-width: 300px;
+}
+
+.office-dt-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.office-dt-element h1, .office-dt-element h2, .office-dt-element .office-btn {
+    color: #35408e;
+}
+
+.office-dt-element .office-details h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #35408e;
+}
+
+.office-dt-element p {
+    font-size: 14px;
+    color: #414042;
+}
+
+.office-analytics {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 220px;
+    column-gap: 15px;
+    margin: 0 20px 0 20px;
+}
+
+.office-queue-num, .office-transactions {
+    background-color: #f4f6fc;
+    height: 70px;
+    width: auto;
+    padding: 9px 12px;
+    text-align: center;
+    align-content: center;
+}
+
+.office-dt-element h2 {
+    font-size: 18px;
+}
+
+.office-queue-num p, .office-transactions p {
+    font-size: 13px;
+}
+
+.office-action-btns {
+    display: grid;
+    row-gap: 5px;
+    width: auto;
+    min-width: 130px;
+    margin-left: 50px;
+}
+
+.office-dt-element .office-btn, .office-dt-element a {
+    border: 1px solid #d2d2db;
+    height: 24px;
+    width: 100%;
+    margin-left: 50px;
+    text-align: center;
+    align-content: center;
+    justify-self: end;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+a#viewLink{
+    text-decoration: none;
+    color: #35408e;
+}
+
+a#viewLink:hover{
+    background-color: #35408e;
+    color: #ffffff;
+}
+
+.office-dt-element .office-btn:hover, .add-office:hover {
+    background-color: #35408e;
+    color: #ffffff;
+}
+
+.office-dt-element .delete-office-btn:hover {
+    background-color: #cb0000;
+    color: #ffffff;
+}
+
+dialog::backdrop {
+    background: #35408e;
+    opacity: 0.45;
+}
+
+dialog:modal {
+    font-family: "Atkinson Hyperlegible";
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    padding: 0;
+    width: 550px;
+}
+
+dialog .title-bar {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    padding-bottom: 20px;
+}
+
+dialog .dialog-title {
+    margin: 0;
+    color: #35408e;
+    font-size: 1.5em;
+}
+
+dialog .title-bar .close-button.icon-close {
+    background: url("../assets/icon_close.svg");
+    background-size: cover;
+    height: 32px;
+    width: 32px;
+    aspect-ratio: 1 / 1;
+    margin: auto;
+    margin-right: 0;
+}
+
+dialog .title-bar .close-button.icon-close:hover {
+    background-color: #d8e0fa;
+}
+
+dialog .line-separator {
+    border-bottom: 1px solid #d2d2db;
+}
+
+dialog .modal-body {
+    padding: 30px 40px ;
+/*    padding-bottom: 15px;*/
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+dialog .mb-3 {
+    margin-top: 10px;
+}
+
+dialog .mb-3 input, label {
+    display: block;
+    color: #414042;
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+dialog .mb-3 input, textarea {
+    min-height: 40px;
+    border: 1px solid #cdcdd6;
+    width: 100%;
+    padding-left: 12px;
+    color: #414042;
+}
+
+dialog .mb-3 textarea {
+    padding-top: 12px;
+    resize: vertical;
+}
+
+dialog .mb-3 label {
+    font-weight: bold;
+}
+
+dialog .action-bar {
+    display: flex;
+    background: #f4f6fc;
+    height: 40px;
+    padding: 20px 25px;
+}
+
+dialog button {
+    padding: 5px 20px;
+    color: #35408e;
+    border: 1px solid #d2d2db;
+    height: 40px;
+    background: white;
+    font-size:  1.2em;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+dialog button:hover {
+    background: #35408e;
+    color: white;
+}
+
+dialog .modal-body .mb-3 .btn.btn-secondary.mt-2 {
+    font-size:  1em;
+    height: 34px;
+}
+
+dialog .modal-body input, dialog textarea {
+    box-sizing: border-box;
+}
+
+dialog .action-bar .btn-primary {
+    background: #35408e;
+    color: white;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+dialog .action-bar .btn-primary:hover {
+    background: #23295d;
+    color: white;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+dialog .modal-body .btn-primary.save-details {
+    margin-top: 12px;
+}
+
+#deleteOfficeDialog .dialog-title {
+    color: #cb0000;
+}
+
+#deleteOfficeDialog .action-bar .btn.btn-primary {
+    background: #cb0000;
+}
+
+#deleteOfficeDialog .action-bar .btn.btn-primary:hover {
+    background: #9f0000;
+}
+
+#deleteOfficeDialog .modal-body {
+    font-size: 20px;
+}
+
+#editOfficeDialog .modal-body .purpose-field {
+    display: flex;
+    gap: 5px;
+}
+
+
+#editOfficeDialog .modal-body .purpose-field .btn.btn-danger {
+    padding: 0;
+    display: flex;
+    border: 0;
+    aspect-ratio: 1 / 1;
+}
+
+#editOfficeDialog .modal-body .purpose-field i {
+    font-size: 32px;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+
+

@@ -1,0 +1,388 @@
+html, body { 
+    margin: unset;
+    padding: unset;
+    background-color: #f4f6fc;
+}
+
+.main {
+    padding: 80px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    min-height: 77vh;
+}
+
+/* LOGIN */
+.header, .loginbody {
+    width: 50%;
+    padding: 55px;
+    font-family: 'Atkinson Hyperlegible', 'Courier New', Courier, monospace;
+}
+
+/* header */
+.header {
+    background-color: #35408e;
+    border-right: 15px solid #ffd41c;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    color: #ffffff;
+}
+
+.nu-logo-login {
+    flex-grow: 1;
+    align-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+}
+
+.nu-logo-login img {
+    height: 100px;
+    align-content: center;
+}
+
+.nu-logo-login p {
+    margin: 0 0 0 15px;
+    font-size: 30px;
+    align-content: center;
+}
+
+.nu-queuest-logo {
+    flex-grow: 9;
+    align-content: center;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.nu-queuest-logo img {
+    width: 100%;
+}
+
+.login-header-sub h2 {
+    margin: 0;
+    font-weight: 1000;
+    font-size: 30px;
+}
+
+.login-header-sub p {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* login area */
+.loginbody {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome {
+    text-align: center;
+    line-height: 5px;
+}
+
+.welcome h1 {
+    color: #35408e;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.welcome p {
+    color: #191919;
+    font-size: 17px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.loginbody select {
+    background: url(../assets/down_icon.svg) no-repeat 96%;
+}
+
+#accountselect {
+    width: 350px;
+    height: 38px;
+    margin: 10px 0;
+    padding: 0 25px;
+    background-color: #f6f6f6;
+    border: 1px solid #dddde3;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    color: #414042;
+    appearance: none;
+}
+
+.email-entry input, .password-entry input {
+    background-color: #f6f6f6;
+    justify-content: center;
+    border: 1px solid #dddde3;
+    height: 38px;
+    width: 303px;
+    margin: 3px 0;
+    padding: 0 0 0 45px;
+    font-family: 'Atkinson Hyperlegible', 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: #414042;
+}
+
+i {
+    position: absolute;
+}
+
+.material-symbols-outlined {
+    margin: 11px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 40;
+    color: #737373;
+}
+
+.login-submit input {
+    margin-top: 10px;
+    width: 350px;
+    height: 40px;
+    border-radius: 0;
+    background-color: #35408e;
+    font-size: 17px;
+    color: #ffffff;
+    border: 0;
+}
+
+.login-submit input:hover {
+    cursor: pointer;
+}
+
+.otherLogin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.otherLogin p {
+    margin: 8px 0;
+    color: #737373;
+}
+
+.otherLogin a {
+    color: #3540ac;
+}
+
+.otherLogin input {
+    margin: 0 5px 0 0;
+}
+
+.nuorms {
+    margin: 10px 0 0 0;
+    text-align: center;
+    position: relative;
+    color: #414042;
+    font-size: 12px;
+}
+
+.nuorms p {
+    margin: 10px 0;
+}
+
+.nuorms::before {
+    content:" ";
+    height: 1px;
+    width: 43%;
+    background: #d2d2db;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.nuorms::after {
+    content:" ";
+    height: 1px;
+    width: 43%;
+    background: #d2d2db;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.login-container {
+    display: grid;
+}
+
+.inv {
+    display: none;
+}
+
+.vis {
+    display: initial;
+}
+
+.MSbtn img {
+    height: 20px;
+    padding: 7px 10px 0 0;
+}
+
+.MSbtn p {
+    margin: 0;
+    align-content: center;
+}
+
+.MSbtn {
+    display: flex;
+    flex-direction: row;
+    color: #191919;
+    border: 1px solid #515151;
+    background-color: #ffffff;
+    width: 350px;
+    height: 35px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.tos {
+    font-size: 14px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.tos p {
+    margin: 0;
+}
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 767px) {
+    html, body { 
+        background-color: #ffffff;
+    }
+
+    .main {
+        padding: 0;
+        flex-direction: column;
+        min-height: fit-content;
+    }
+
+    .header, .loginbody {
+        width: auto;
+        border-right: none;
+        padding: 20px 30px;
+    }
+
+    /* HEADER */
+    .header {
+        border-bottom:7px solid #ffd41c;
+    }
+
+    .nu-logo-login p {
+        margin: 0 0 0 10px;
+        font-size: unset;
+    }
+
+    .nu-logo-login img {
+        height: 40px;
+    }
+
+    .nu-logo-login {
+        margin-top: 20px;
+        flex-grow: unset;
+        font-size: 20px;
+        justify-content: center;
+    }
+
+    .nu-queuest-logo {
+        flex-grow: unset;
+        height: fit-content;
+        margin: 20px 0;
+    }
+
+    .login-header-sub {
+        margin-left: 10px;
+    }
+
+    .login-header-sub h2 {
+        font-size: 18px;
+    }
+
+    .login-header-sub p {
+        font-size: 13px;
+    }
+
+    /* LOGIN BODY */
+    .loginbody {
+        padding: 15px 20px;
+    }
+
+    .welcome {
+        width: 300px;
+        margin: 5px 31px;
+    }
+
+    .welcome h1 {
+        font-size: 18px;
+    }
+
+    .welcome p {
+        font-size: 13px;
+        line-height: 13px;
+    }
+
+    #accountselect {
+        height: 30px;
+        width: 300px;
+        font-size: 13px;
+        margin: 5px 0;
+        padding: 0 20px;
+    }
+
+    .email-entry input, .password-entry input {
+        margin: 3px 31px;
+        height: 30px;
+        width: 253px;
+        font-size: 13px;
+    }
+
+    .material-symbols-outlined {
+        margin: 7px 41px;
+    }
+
+    .login-submit input {
+        width: 300px;
+        margin: 8px 31px 0 31px;
+        font-size: 15px;
+    }
+
+    .otherLogin {
+        font-size: 13px;
+        margin: 0 31px;
+    }
+
+    .nuorms {
+        margin: 0 31px;
+    }
+
+    .MSbtn {
+        width: 300px;
+        margin: 0 31px;
+    }
+
+    .MSbtn p {
+        font-size: 15px;
+    }
+
+    .tos {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}

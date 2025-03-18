@@ -1,0 +1,223 @@
+html, body { 
+    margin: unset;
+    padding: unset;
+    background-color: #f4f6fc;
+    font-family: 'Atkinson Hyperlegible', 'Courier New', Courier, monospace;
+}
+
+h1, h2, h3, p {
+    margin: unset;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    background-color: #35408e;
+    border-bottom: 10px solid #ffd41c;
+    color: #ffffff;
+    min-height: 50px;
+    padding: 5px 30px;
+}
+
+.header h1, .header h2, header p {
+    margin: unset;
+}
+
+.header h2 {
+    font-size: 20px;
+}
+
+.user p .account-name {
+    font-weight: 700;
+}
+
+.header-left, .header-buttons, .user {
+    align-content: center;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-buttons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    margin-right: 50px;
+}
+
+.header-buttons a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header-buttons a h2 {
+    font-weight: 100;
+}
+
+.user p {
+    margin: unset;
+    align-content: center;
+    font-size: 18px;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.user .logout a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 15px;
+}
+
+.account-pic {
+    align-content: center;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+/* main */
+.main {
+    padding: 0 30px;
+}
+
+.main-header h1 {
+    font-size: 25px;
+    color: #35408e;
+    margin-top: 28px;
+}
+
+.main-div {
+    border-bottom: 1px solid #d2d2db;
+    margin: 28px 0 15px 0;
+}
+
+/* MAIN */
+.main-content {
+    display: grid;
+    width: auto;
+    grid-template-columns: 30% 30% 20% 20%;
+    gap: 10px;
+    padding: 0 30px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.transaction-graph {
+    grid-column: 1 / span 2; 
+}
+
+.traffic-graph {
+    grid-column: 3 / span 2; 
+}
+
+.main-content > div {
+    background-color: #ffffff;
+    border: 1px solid #d2d2db;
+    width: auto;
+    padding: 20px 30px;
+}
+
+.transaction-graph, .traffic-graph {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 300px;
+    justify-content: center;
+    padding-bottom: 10px !important;
+}
+
+.analytics-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.analytics-cont .analytics-cont-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.analytics-cont .analytics-cont-left .counter {
+    position: relative;
+    margin-top: auto;
+    font-size: 80px;
+}
+
+.analytics-i {
+    display: flex;
+    align-self: center;
+
+}
+
+.analytics-i img {
+    height: 140px;
+}
+
+.analytics-title {
+    color: #35408e;
+    font-size: 25px;
+}
+
+.counter {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.active-offices .counter {
+    margin-top: 10px;
+}
+
+.active-ofc-counter {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: rgb(151, 151, 151);
+}
+
+.active-office-desc{
+    font-size: 14px;
+    color: rgb(151, 151, 151);
+}
+.analytics-div {
+    border-bottom: 1px solid #d2d2db;
+    margin: 5px 0 5px 0;
+}
+
+.manage-activity-btn {
+    border: 1px solid #d2d2db;
+    text-align: center;
+    margin-top: 8px;
+    padding: 5px;
+    font-weight: 700;
+    color: #35408e;
+    cursor: pointer;
+}
+
+.manage-activity-btn:hover {
+    background-color: #35408e;
+    color: #ffffff;
+}
+
+/* transaction graph */
+.transaction-analytics-graph, .traffic-analytics-graph {
+    width: 100%;
+    height: 100%;
+}

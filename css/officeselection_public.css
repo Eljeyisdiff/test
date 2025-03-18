@@ -1,0 +1,44 @@
+.office-selection {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.office-label {
+    font-size: 18px;
+}
+
+select {
+    width: 300px;
+    height: 38px;
+    margin: 10px 0;
+    padding: 0 25px;
+    background-color: #f6f6f6;
+    border: 1px solid #dddde3;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    color: #414042;
+    appearance: none;
+    background: url(../assets/down_icon.svg) no-repeat 96%;
+}
+
+.submit-btn button {
+    margin-top: 10px;
+    width: 300px;
+    height: 40px;
+    border-radius: 0;
+    background-color: #35408e;
+    font-size: 17px;
+    color: #ffffff;
+    border: 0;
+}
+
+.submit-btn button:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #35408e;
+    border: 1px solid #dddde3;
+}

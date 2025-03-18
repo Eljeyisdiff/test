@@ -1,0 +1,460 @@
+html, body { 
+    margin: unset;
+    padding: unset;
+    background-color: #f4f6fc;
+    font-family: 'Atkinson Hyperlegible', 'Courier New', Courier, monospace;
+
+}
+
+h1, h2, h3, p {
+    margin: unset;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    background-color: #35408e;
+    border-bottom: 10px solid #ffd41c;
+    color: #ffffff;
+    min-height: 50px;
+    padding: 5px 30px;
+}
+
+.header h1, .header h2, header p {
+    margin: unset;
+}
+
+.header h2 {
+    font-size: 20px;
+}
+
+.user p .account-name {
+    font-weight: 700;
+}
+
+.header-left, .header-buttons, .user {
+    align-content: center;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-buttons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    margin-right: 50px;
+}
+
+.header-buttons a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header-buttons a h2 {
+    font-weight: 100;
+}
+
+.user p {
+    margin: unset;
+    align-content: center;
+    font-size: 18px;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.user .logout a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 15px;
+}
+
+.account-pic {
+    align-content: center;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+/* main content */
+.main {
+    padding: 0 30px;
+}
+
+.main-header h1 {
+    font-size: 25px;
+    color: #35408e;
+    margin-top: 28px;
+}
+
+.main-div {
+    border-bottom: 1px solid #d2d2db;
+    margin: 28px 0 15px 0;
+}
+
+.main-content-container {
+    display: grid;
+    border: 1px solid #d2d2db;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    margin: 0 100px 50px 100px;
+}
+
+.users-top-cont {
+    display: grid;
+    grid-template-columns: 70% auto 160px;
+    gap: 12px;
+}
+
+.user-search {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    gap: 5px;
+    align-items: center;
+}
+
+.user-search i {
+    position: absolute;
+    padding: 5px 0 0 15px;
+    color: #5f6368;
+}
+
+.user-search .search-in input {
+    border: 1px solid #d2d2db;
+    width: 100%;
+    height: 35px;
+    font-family: 'Atkinson Hyperlegible', 'Courier New', Courier, monospace;
+    padding-left: 45px;
+    font-size: 15px;
+}
+
+.user-search .search-btn input {
+    border: 1px solid #d2d2db;
+    width: 100%;
+    height: 35px;
+    background-color: #35408e;
+    font-family: 'Atkinson Hyperlegible', 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.add-user  {
+    display: flex;
+    border: 1px solid #d2d2db;
+    background-color: #ffffff;
+    width: 100%;
+    height: 33px;
+    align-items: center;
+    justify-content: center;
+    color: #35408e;
+    cursor: pointer;
+}
+
+.add-user i {
+    margin-right: 5px;
+}
+
+.add-user p {
+    margin-right: 5px;
+}
+
+/* filter dropdown */
+.office-flt-drp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #35408e;
+    height: 35px;
+    width: 160px;
+    background-color: #ffffff;
+    border: 1px solid #d2d2db;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.office-flt-drp i {
+    margin-right: 5px;
+}
+
+.filter-by-office {
+    position: relative;
+    display: inline-block;
+}
+
+.office-flt-options {
+    border: 1px solid #d2d2db;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 159px;
+    z-index: 1;
+}
+
+.office-flt-options a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.office-flt-options a:hover {
+    background-color: #d2d2db
+}
+
+.filter-by-office:hover .office-flt-options {
+    display: block;
+}
+
+.filter-by-office:hover .office-flt-drp {
+    border: 1px solid #35408e;
+    background-color: #35408e;
+    color: #ffffff;
+}
+
+/* user list proper */
+.user-list-container {
+    margin-top: 15px;
+    display: grid;
+    gap: 10px;
+}
+
+.user-list-element, .user-list-headers {
+    display: grid;
+    grid-template-columns: 20% 15% 15% 30% 20%;
+    width: auto;
+    padding: 20px 25px;
+    align-items: center;
+    text-align: center;
+}
+
+.user-list-headers {
+    padding: 0 25px 0 25px;
+    font-size: 13px;
+}
+
+.user-list-element {
+    border: 1px solid #d2d2db;
+}
+
+.user-list {
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.user-list-element .user-name, .user-name-header {
+    text-align: left;
+}
+
+.user-list-element h2 {
+    color: #35408e;
+}
+
+.user-list-element p {
+    font-size: 15px;
+    color: #414042;
+}
+
+.user-action-btns {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 5px;
+    width: auto;
+    min-width: 130px;
+}
+
+.user-list-element .action-btn {
+    border: 1px solid #d2d2db;
+    height: 28px;
+    width: 90%;
+    text-align: center;
+    align-content: center;
+    justify-self: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.action-btn:hover, .add-user:hover {
+    border: 1px solid #35408e;
+    background-color: #35408e;
+    color: #ffffff;
+}
+
+.user-list-element .edit-user-btn.action-btn, .delete-user-btn.action-btn {
+    color: #35408e;
+}
+
+.user-list-element .edit-user-btn.action-btn:hover {
+    background-color: #35408e;
+    color: #ffffff;
+}
+
+.user-list-element .delete-user-btn:hover {
+    background-color: #cb0000;
+    color: #ffffff;
+    border: 1px solid #950000;
+}
+
+dialog::backdrop {
+    background: #35408e;
+    opacity: 0.45;
+}
+
+dialog:modal {
+    cursor: move;
+    font-family: "Atkinson Hyperlegible";
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    padding: 0;
+    width: 550px;
+    
+   
+}
+
+dialog .title-bar {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+  
+}
+
+dialog p.title {
+    margin: 0;
+    color: #35408e;
+    font-size: 1.5em;
+}
+
+dialog p.title.office {
+    font-weight: bold;
+    margin: 0;
+    align-content: center;
+    color: #35408e;
+    font-size: 1.4em;
+}
+
+dialog .title-bar .close-button.icon-close {
+    background: url("../assets/icon_close.svg");
+    background-size: cover;
+    height: 32px;
+    width: 32px;
+    aspect-ratio: 1 / 1;
+    margin: auto;
+    margin-right: 0;
+}
+
+dialog .title-bar .close-button.icon-close:hover {
+    background-color: #d8e0fa;
+}
+
+dialog .line-separator {
+    border-bottom: 1px solid #d2d2db;
+}
+
+dialog .action-bar {
+    display: flex;
+    background: #f4f6fc;
+    height: 40px;
+    padding: 20px 25px;
+}
+
+dialog .action-bar button {
+    padding: 5px 20px;
+    color: #35408e;
+    border: 1px solid #d2d2db;
+    height: 40px;
+    background-color: white;
+    font-size:  1.2em;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+dialog .action-bar button:hover {
+    background-color: #d8e0fa;
+}
+
+dialog .dialog-body {
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+dialog .dialog-body .entry {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+dialog .dialog-body .entry label {
+    color: #414042;
+    font-weight: bold;
+}
+
+dialog .dialog-body .entry input, select {
+    font-family: "Atkinson Hyperlegible";
+    border: 1px solid #d1d1db;
+    background-color: #f6f6f6;
+    height: 40px;
+    padding-left: 12px;
+    color: #414042;
+    font-size: 16px;
+}
+
+dialog .dialog-body .entry.name input {
+    background-color: white;
+}
+
+dialog .action-bar .button-right {
+    margin-left: auto;
+    margin-right: 0;
+    background: #35408e;
+    color: white;
+}
+
+dialog .action-bar .button-right:hover {
+    margin-left: auto;
+    margin-right: 0;
+    background: #262e66;
+    color: white;
+}
+
+#dialog-delete-user p.title {
+    color: #cb0000;
+}
+
+#dialog-delete-user .dialog-body p {
+    font-size: 20px;
+}
+
+#dialog-delete-user .dialog-body span {
+    font-weight: bold;
+}
+
+#dialog-delete-user .action-bar .button-right.delete-user {
+    color: white;
+    background:#cb0000;
+}
+
+#dialog-delete-user .action-bar .button-right.delete-user:hover {
+    background:#a30000;
+}
+

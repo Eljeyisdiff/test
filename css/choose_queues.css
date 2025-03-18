@@ -1,0 +1,449 @@
+html, body {
+    background: #f6f6f6;
+    font-family: "Atkinson Hyperlegible";
+    margin: 0;
+}
+
+main {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Atkinson Hyperlegible";
+    background: #f6f6f6;
+}
+
+main .top-bar {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+main .top-bar p.title {
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #35408e;
+}
+
+main .top-bar .search-bar {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0;
+    margin-left: auto;
+    height: 44px;
+    background: white;
+    border: 1px solid #d2d2db;
+    width: 30%;
+}
+
+main .top-bar .search-bar input {
+    background: url(../assets/icon_search.svg) no-repeat 12px;
+    background-size: 32px;
+    font-family: "Atkinson Hyperlegible";
+    font-size: 1.2em;
+    color: #737373;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    padding-left: 55px;
+}
+
+main .line-separator.top-bar {
+    border-bottom: 1px solid #d2d2db;
+    margin: 1em auto;
+}
+
+main .office-grids {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+/*    grid-template-columns: repeat(auto-fill, minmax(16.7em, 1fr));*/
+    margin: auto;
+    gap: 10px;
+}
+
+main .office-grids .office-entry {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 1px solid #d2d2db;
+    font-size: 0.7em;
+    padding: 1.8em;
+    padding-top: 0;
+    width: 21em;
+    min-height: 25.5em;
+}
+
+main .office-grids .office-entry .title-grid {
+    display: flex;
+    height: 7.5em;
+}
+
+main .office-grids .office-entry .title-grid p.title {
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #35408e;
+    font-size: 1.85em;
+    font-weight: bold;
+}
+
+main .office-grids .office-entry .line-separator {
+    border-bottom: 1px solid #d2d2db;
+    margin-top: 0;
+}
+
+main .office-grids .office-entry p {
+    color: #414042;
+    font-size: 1.32em;
+    line-height: 1.35em;
+}
+
+main .office-grids .office-entry button {
+    font-family: "Atkinson Hyperlegible";
+    font-weight: bold;
+    color: #35408e;
+    width: 100%;
+    border: 1px solid #d2d2db;
+    padding: 0.3em 1.0em;
+    background: white;
+    margin-top: 0.7em;
+    font-size:  1.5em;
+    margin-bottom: 0;
+    cursor: pointer;
+/*    height: 2.4em;*/
+}
+
+main .office-grids .office-entry button:disabled {
+    color: #727174;
+    border: 1px solid #ece8f0;
+    background-color: #ece8f0;
+}
+
+main .office-grids .office-entry button:hover {
+    background-color: #d8e0fa;
+}
+
+main .office-grids .office-entry button:hover:disabled {
+    background-color: #ece8f0;
+}
+
+main .office-grids .office-entry .queue-statistics {
+    display: flex;
+/*    grid-template-columns: repeat(2, 1fr);*/
+/*    gap: 0.7em;*/
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+main .office-grids .office-entry .queue-statistics p {
+    margin: 0;
+}
+
+main .office-grids .office-entry .queue-statistics .currently-in-line {
+    padding: 0.6em 1em;
+    background: #f4f6fc;
+    margin: 0;
+    width: 100%;
+}
+
+main .office-grids .office-entry .queue-statistics .currently-in-line p {
+    text-align: center;
+    margin: 0;
+    line-height: 1.3em;
+    font-size: 1.2em;
+}
+
+main .office-grids .office-entry .queue-statistics .currently-in-line p.current-stat {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #35408e;
+    line-height: unset;
+}
+
+dialog::backdrop {
+    background: #35408e;
+    opacity: 0.45;
+}
+
+dialog:modal {
+    font-family: "Atkinson Hyperlegible";
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    padding: 0;
+    width: 550px;
+}
+
+dialog .title-bar {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    padding-bottom: 20px;
+}
+
+dialog p.title {
+    margin: 0;
+    color: #35408e;
+    font-size: 1.5em;
+}
+
+dialog p.title.office {
+    font-weight: bold;
+    margin: 0;
+    color: #35408e;
+    font-size: 1.4em;
+}
+
+dialog .title-bar .close-button.icon-close {
+    background: url("../assets/icon_close.svg");
+    background-size: cover;
+    height: 32px;
+    width: 32px;
+    aspect-ratio: 1 / 1;
+    margin: auto;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+dialog .title-bar .close-button.icon-close:hover {
+    background-color: #d8e0fa;
+}
+
+dialog .line-separator {
+    border-bottom: 1px solid #d2d2db;
+}
+
+dialog .action-bar {
+    display: flex;
+    background: #f4f6fc;
+    height: 40px;
+    padding: 20px 25px;
+}
+
+dialog .action-bar button {
+    padding: 5px 20px;
+    color: #35408e;
+    border: 1px solid #d2d2db;
+    height: 40px;
+    background: white;
+    font-size:  1.2em;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+#dialog-confirm-queue .action-bar button.close-button.go-back {
+    background: #f4f6fc;
+}
+
+#dialog-confirm-queue .action-bar button.close-button.go-back:hover {
+    background-color: #d8e0fa;
+}
+
+#dialog-confirm-queue .action-bar button.confirm-join {
+    background: #35408e;
+    color: white;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+#dialog-confirm-queue .action-bar button.confirm-join:hover {
+    background-color: #d8e0fa;
+    color: #414042;
+}
+
+#dialog-confirm-queue .dialog-body {
+    padding: 30px 40px ;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+#dialog-confirm-queue .dialog-body p {
+    margin: 0;
+
+}
+
+#dialog-confirm-queue span {
+    color: #cc0000;
+}
+
+#dialog-confirm-queue .text-reason {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #414042;
+}
+
+#dialog-confirm-queue .select-reason {
+    padding: 10px 15px;
+}
+
+#dialog-confirm-queue .select-reason input, select, label {
+    color: #414042;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    line-height: 16px;
+}
+
+#dialog-confirm-queue .select-reason .selection.removable label {
+    padding-left: 5px;
+}
+
+#dialog-confirm-queue .reason-other-input {
+    background: 0;
+    border: 1px solid #d2d2db;
+    width: 96%;
+    height: 35px;
+    margin-left: 25px;
+    margin-right: 0;
+}
+
+#dialog-confirm-queue .line-container {
+    padding-left:  40px;
+    padding-right: 40px;
+}
+
+#dialog-already-queued .title-bar {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    padding-bottom: 20px;
+}
+
+#dialog-already-queued p.title {
+    font-weight: bold;
+    margin: 0;
+    color: #35408e;
+    font-size: 1.4em;
+}
+
+#dialog-already-queued p.dialog-body {
+    margin: 0;
+    color: #181818;
+    font-size: 1.25em;
+    padding: 15px 30px;
+
+}
+
+#dialog-already-queued span {
+    font-weight: bold;
+}
+
+#dialog-already-queued .action-bar button.confirm-button.goto-queue {
+    background: #f4f6fc;
+}
+
+#dialog-already-queued .action-bar button.close-button.okay {
+    background: #35408e;
+    color: white;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+#dialog-already-queued .action-bar button.confirm-button.goto-queue:hover {
+    background-color: #d8e0fa;
+}
+
+#dialog-already-queued .action-bar button.close-button.okay:hover {
+    background-color: #d8e0fa;
+    color: #414042;
+}
+
+/* Mobile view */
+@media screen and (max-width: 767px) {
+
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    main .top-bar {
+        flex-direction: column;
+    }
+
+    main .line-separator.top-bar {
+        margin: 0.8em auto;
+    }
+
+    main .top-bar p.title {
+        font-size: 24px;
+    }
+
+    main .top-bar .search-bar {
+        width: 100%;
+        height: 44px;
+        margin-top: 12px;
+    }
+
+    main .office-grids {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        gap: 6px;
+    }
+
+    main .office-grids .office-entry {
+        width: 100%;
+        font-size: 8px;
+        box-sizing: border-box;
+    }
+
+    dialog .action-bar button {
+        padding: 5px 20px;
+        color: #35408e;
+        border: 1px solid #d2d2db;
+        height: 40px;
+        background: white;
+        font-size:  1.0em;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+/* Animation section */
+dialog[open] {
+  animation: fadein 0.2s ease-in;
+}
+
+@keyframes fadein{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity: 1
+  }
+}
+
+
+
+main .office-grids .office-entry {
+    transition: width 0.25s linear;
+}
+
+/* Animation section (responsive) */
+@media screen and (max-width: 767px) {
+
+    header {
+        transition: min-height 0.25s ease-in-out;
+        transition: border-bottom 0.25s ease-in-out;
+    }
+
+    header h1#title {
+        transition: font-size 0.25s ease-in-out;
+    }
+
+    main .office-grids .office-entry {
+        transition: width 0.25s linear;
+    }
+
+}
+
+
+
+

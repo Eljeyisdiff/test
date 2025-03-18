@@ -1,0 +1,10 @@
+.officewindows-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+}
+
+.officewindows-col {
+    display: grid;
+    row-gap: 10px;
+}

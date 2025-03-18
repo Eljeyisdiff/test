@@ -1,0 +1,209 @@
+html, body { 
+    margin: unset;
+    padding: unset;
+    background-color: #f4f6fc;
+    font-family: 'Atkinson Hyperlegible', 'Courier New', Courier, monospace;
+}
+
+h1, h2, h3, p {
+    margin: unset;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    background-color: #35408e;
+    border-bottom: 10px solid #ffd41c;
+    color: #ffffff;
+    min-height: 50px;
+    padding: 5px 30px;
+}
+
+.header h1, .header h2, header p {
+    margin: unset;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: bold
+}
+
+.header h2 {
+    font-size: 20px;
+}
+
+.user p .account-name {
+    font-weight: 700;
+}
+
+.header-left, .header-buttons, .user {
+    align-content: center;
+}
+
+.header-left {
+    line-height: 22px;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-buttons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    margin-right: 50px;
+}
+
+.header-buttons a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header-buttons a h2 {
+    font-weight: 100;
+}
+
+.user p {
+    margin: unset;
+    align-content: center;
+    font-size: 18px;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.user .logout a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 15px;
+}
+
+.account-pic {
+    align-content: center;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.office-name h1 {
+    font-size: 25px;
+    color: #35408e;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.line-separator {
+    border-bottom: 1px solid #d2d2db;
+}
+
+.main {
+    padding: 0 30px;
+}
+
+.main .back-button {
+    margin: 20px 50px;
+}
+
+.main .back-button .btn.btn-secondary {
+    display: flex;
+    border-radius: 0px;
+    background-color: white;
+    border: 1px solid #d2d2db;
+    color: #35408e;
+    align-content: center;
+}
+
+.main .back-button .btn.btn-secondary i {
+    margin-right: 5px;
+}
+
+.main .back-button .btn.btn-secondary:hover, .main .top-bar .btn.btn-primary:hover {
+    background-color: #35408e;
+    color: white;
+}
+
+.completed-transactions {
+    border: 1px solid #d2d2db;
+    padding: 25px 30px;
+    margin: 25px 50px;
+    background: white;
+    min-height: 300px;
+}
+
+.completed-transactions .top-bar {
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+}
+
+.completed-transactions .top-bar h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.completed-transactions .top-bar .date-container {
+    display: flex;
+    margin: auto;
+    margin-left: 0;
+    gap: 15px;
+    height: 100%;
+}
+
+.completed-transactions .top-bar .date-container .form-group label {
+    color: #414042;
+    font-weight: bold;
+}
+
+.completed-transactions .top-bar .date-container .form-group input {
+    border: 1px solid #d2d2db;
+    color: #414042;
+    height: 100%;
+}
+
+.completed-transactions .top-bar .btn.btn-primary {
+    display: flex;
+    align-content: center;
+    background: white;
+    border-radius: 0;
+    color: #35408e;
+    border: 1px solid #d2d2db;
+}
+
+.completed-transactions .top-bar .btn.btn-primary i {
+    margin-right: 5px;
+}
+
+.completed-transactions .display {
+    margin-top: 15px;
+}
+
+.completed-transactions .display td {
+    border-style: hidden;
+    text-align: center;
+}
+
+.completed-transactions .display th {
+    font-size: 19.5px;
+    text-align: center;
+}
+
+#transactions-table_wrapper {
+    margin-top: 14px;
+}
+
+
+

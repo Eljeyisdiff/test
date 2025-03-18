@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/queueview_employee.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- google font icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle,coffee,person_remove" />
+    <title>NU Queuest: Current Queue</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <h1>NU QUEUEST</h1>
+        </div>
+        <div class="header-right">
+            <div class="user">
+                <!-- name is hard-coded, should be linked to user database for name instead -->
+                <p>Welcome back, <span class="account-name">Fatima</span></p>
+                <!-- !!! - change into actual account img??? -->
+                <i class="material-symbols-outlined account-pic">account_circle</i>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main-header">
+            <div class="header-text">
+                <h1>Student Development and Activities Office</h1>
+            </div>
+            <!-- !!! - still has no javascript action -->
+            <div class="break-button">
+                <i class="material-symbols-outlined notif-btn-icon">coffee</i>
+                <p>Take a break</p>
+            </div>
+        </div>
+    
+        <div class="main-div"></div>
+
+        <div class="main-body">
+            <div class="queue-ticket">
+                <!-- scoop corners -->
+                    <div id="ne"  class="scoop-corner"></div>
+                    <div id="nw" class="scoop-corner"></div>
+                    <div id="se" class="scoop-corner"></div>
+                    <div id="sw" class="scoop-corner"></div>
+                <div class="queue-office">
+                    <h1>Currently serving</h1>
+                </div>
+                <div class="queue-num">
+                    <p>Queue number</p>
+                </div>
+                <div class="queue-code">
+                    <h1>NUL112</h1>
+                </div>
+
+                <div class="user-queue-details">
+                    <div class="user-name">
+                        <p class="user-in">Carl Joshua Cabase</p>
+                        <p class="user-detail">Name</p>
+                    </div>
+                    <div class="user-type">
+                        <p class="user-in">Student</p>
+                        <p class="user-detail">Type</p>
+                    </div>
+                    <div class="user-purpose">
+                        <p class="user-in">Request for documents</p>
+                        <p class="user-detail">Purpose</p>
+                    </div>
+                </div>
+
+                <div class="ticket-div"></div>
+
+                <div class="serving-duration">
+                    <p>Serving time</p>
+                    <p class="serving-duration-timestamp">1:45:13</p>
+                </div>
+                <div class="ticket-buttons">
+                    <!-- !!! - as yet, no javascript action -->
+                    <button class="pause-ticket-btn" name="control-button" type="button" value="">Pause</button>
+                    <button class="cancel-ticket-btn" name="control-button" type="button" value="">Cancel</button>
+                    <button class="done-ticket-btn" name="control-button" type="button" value="">Done</button>
+                </div>
+            </div>
+
+            <div class="queue-status-panel">
+                <div class="queue-main">
+                    <div class="officewindows-container">
+                        <div class="officewindows">
+                            <div class="windows window-up">
+                                <div class="window">
+                                    <p>Window 1</p>
+                                    <h2>Currently Serving...</h2>
+                                    </div>
+                                <div class="now-serving">
+                                    <p>NUL112</p>
+                                </div>
+                            </div>
+                            <div class="windows window-break">
+                                <div class="window">
+                                    <p>Window 1</p>
+                                    <h2>On break</h2>
+                                </div>
+                                <div class="window-resume">
+                                    <p>Resumes at <span class="resume-time">1:00 PM</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-div"></div>
+                    <div class="queue-container">
+                        <!-- first 5 in line here -->
+                        <div class="queue-element" id="now-serving-q">
+                            <div class="q-num">
+                                <h3>1</h3>
+                            </div>
+                            <div class="q-code">
+                                <p>NUL112</p>
+                            </div>
+                            <div class="q-acc-type">
+                                <p class="u-type">Student</p>
+                                <p>Type</p>
+                            </div>
+                            <div class="q-purpose">
+                                <p class="u-purpose">Submission of event concept paper</p>
+                                <p>Purpose</p>
+                            </div>
+                            <div class="remove-queue">
+                                <i class="material-symbols-outlined person-remove-i">
+                                    person_remove
+                                </i>
+                            </div>
+                        </div>
+                        <div class="queue-element" id="other-window-serving">
+                            <div class="q-num">
+                                <h3>2</h3>
+                            </div>
+                            <div class="q-code">
+                                <p>NUL113</p>
+                            </div>
+                            <div class="q-acc-type">
+                                <p class="u-type">Student</p>
+                                <p>Type</p>
+                            </div>
+                            <div class="q-purpose">
+                                <p class="u-purpose">Submission of event concept paper</p>
+                                <p>Purpose</p>
+                            </div>
+                            <div class="remove-queue">
+                                <i class="material-symbols-outlined person-remove-i">
+                                    person_remove
+                                </i>
+                            </div>
+                        </div>
+                        <div class="queue-element">
+                            <div class="q-num">
+                                <h3>3</h3>
+                            </div>
+                            <div class="q-code">
+                                <p>NUL114</p>
+                            </div>
+                            <div class="q-acc-type">
+                                <p class="u-type">Student</p>
+                                <p>Type</p>
+                            </div>
+                            <div class="q-purpose">
+                                <p class="u-purpose">Submission of event concept paper</p>
+                                <p>Purpose</p>
+                            </div>
+                            <div class="remove-queue">
+                                <i class="material-symbols-outlined person-remove-i">
+                                    person_remove
+                                </i>
+                            </div>
+                        </div>
+                        <div class="queue-element">
+                            <div class="q-num">
+                                <h3>4</h3>
+                            </div>
+                            <div class="q-code">
+                                <p>NUL115</p>
+                            </div>
+                            <div class="q-acc-type">
+                                <p class="u-type">Student</p>
+                                <p>Type</p>
+                            </div>
+                            <div class="q-purpose">
+                                <p class="u-purpose">Submission of event concept paper</p>
+                                <p>Purpose</p>
+                            </div>
+                            <div class="remove-queue">
+                                <i class="material-symbols-outlined person-remove-i">
+                                    person_remove
+                                </i>
+                            </div>
+                        </div>
+                        <div class="queue-element">
+                            <div class="q-num">
+                                <h3>5</h3>
+                            </div>
+                            <div class="q-code">
+                                <p>NUL116</p>
+                            </div>
+                            <div class="q-acc-type">
+                                <p class="u-type">Student</p>
+                                <p>Type</p>
+                            </div>
+                            <div class="q-purpose">
+                                <p class="u-purpose">Submission of event concept paper</p>
+                                <p>Purpose</p>
+                            </div>
+                            <div class="remove-queue">
+                                <i class="material-symbols-outlined person-remove-i">
+                                    person_remove
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <dialog id="dialog-cancel-queue">
+        <div class="title-bar">
+          <p class="title">Warning</p>
+          <div class="close-button icon-close"></div>
+        </div>
+        <div class="line-container">
+          <div class="line-separator"></div>
+        </div>
+        <div class="dialog-body">
+          <p class="text-confirmation">Are you sure you want to cancel this queue?</p>
+          <p>This action will permanently remove the user from the queue, and it cannot be undone.</p>
+        </div>
+        <div class="action-bar">
+          <button class="button keep" name="control-button" type="button" value="">Keep this queue</button>
+          <button class="button confirm" name="control-button" type="button" value="">Confirm cancellation</button>
+        </div>
+    </dialog>
+      
+    <dialog id="dialog-take-break" class="modal-employee-break">
+        <div class="title-bar">
+          <p class="title">You're about to take a break</p>
+          <div class="close-button icon-close"></div>
+        </div>
+        <div class="dialog-body">
+          <label for="time-resume">Please enter your estimated time of resumption:</label>
+          <select name="time" id="time-resume">
+            <option value="">1:00 pm</option>
+            <option value="">2:00 pm</option>
+            <option value="">3:00 pm</option>
+            <option value="">4:00 pm</option>
+          </select>
+        </div>
+        <div class="action-bar">
+          <button class="button keep" name="control-button" type="button" value="">Cancel</button>
+          <button class="button confirm" name="control-button" type="button" value="">Start break</button>
+        </div>
+    </dialog>
+</body>
+</html>

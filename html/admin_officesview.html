@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/admin_officesview.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- google font icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle,add,search,trending_down,trending_up" />
+    <title>Admin View: Offices</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <h1>NU QUEUEST</h1>
+        </div>
+        <div class="header-right">
+            <div class="header-buttons">
+                <a href="http://"><h2>Dashboard</h2></a>
+                <h2 class="current-page">Offices</h2>
+                <a href="http://"><h2>Users</h2></a>
+            </div>
+            <div class="user">
+                <!-- name is hard-coded, should be linked to user database for name instead -->
+                <p>Hi, <span class="account-name">Carl Joshua</span></p>
+                <!-- !!! - change into actual account img??? -->
+                <i class="material-symbols-outlined account-pic">account_circle</i>
+                <p class="logout"><a href="http://">Logout</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main-header">
+            <h1>Oversee all office activities</h1>
+        </div>
+        <div class="main-div"></div>
+            <div class="offices-container">
+                <div class="offices-top-cont">
+                    <div class="office-search">
+                        <div class="search-in">
+                            <i class="material-symbols-outlined search">search</i><input type="search" name="office-search" placeholder="Search offices">
+                        </div>
+                        <div class="search-btn">
+                            <input type="submit" name="office-search-submit" value="Search">
+                        </div>
+                    </div>
+                    <div class="add-office">
+                        <i class="material-symbols-outlined add">add</i><p>Add office</p>
+                    </div>
+                </div>
+                <div class="office-dt-container">
+                    <div class="office-dt-element">
+                        <div class="office-dt-left">
+                            <div class="office-details">
+                                <h1 class="office-name">Registrar's Office</h1>
+                                <p class="office-desc">Requests for school records, class scheduling and registration, and graduation requirements.</p>
+                            </div>
+                        </div>
+                        <div class="office-dt-right">
+                            <div class="office-analytics">
+                                <div class="office-queue-num">
+                                    <h2 class="office-queue-count">3</h2>
+                                    <p>People on queue</p>
+                                </div>
+                                <div class="office-transactions">
+                                    <h2 class="office-transactions-count">10</h2>
+                                    <p>Completed Transactions</p>
+                                </div>
+                            </div>
+                            <div class="office-action-btns">
+                                <div class="view-office-btn office-btn">
+                                    <h3>View</h3>
+                                </div>
+                                <div class="edit-office-btn office-btn">
+                                    <h3>Edit</h3>
+                                </div>
+                                <div class="delete-office-btn office-btn">
+                                    <h3>Delete</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

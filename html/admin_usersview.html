@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/admin_usersview.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- google font icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle,add,filter_alt,search,trending_down,trending_up" />
+    <title>Admin Portal: Employees</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <h1>NU QUEUEST</h1>
+            <p>Admin Portal</p>
+        </div>
+        <div class="header-right">
+            <div class="header-buttons">
+                <a href="http://"><h2>Dashboard</h2></a>
+                <a href="http://"><h2>Offices</h2></a>
+                <h2 class="current-page">Employees</h2>
+            </div>
+            <div class="user">
+                <!-- name is hard-coded, should be linked to user database for name instead -->
+                <p>Hi, <span class="account-name">Carl Joshua</span></p>
+                <!-- !!! - change into actual account img??? -->
+                <i class="material-symbols-outlined account-pic">account_circle</i>
+                <p class="logout"><a href="http://">Logout</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main-header">
+            <h1>Monitor and manage all users</h1>
+        </div>
+        
+        <div class="main-div"></div>
+
+        <div class="main-content-container">
+            <div class="users-top-cont">
+                <div class="user-search">
+                    <div class="search-in">
+                        <i class="material-symbols-outlined search">search</i><input type="search" name="userse-search" placeholder="Search Users">
+                    </div>
+                    <div class="search-btn">
+                        <input type="submit" name="user-search-submit" value="Search">
+                    </div>
+                </div>
+                <div class="add-user">
+                    <i class="material-symbols-outlined add">add</i><p>Add user</p>
+                </div>
+                <div class="filter-by-office">
+                    <button class="office-flt-drp"><i class="material-symbols-outlined search">filter_alt</i>Filter by office</button>
+                    <div class="office-flt-options">
+                        <a href="#">Library</a>
+                        <a href="#">Registrar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="user-list-container">
+                <div class="user-list-headers">
+                    <div class="user-name-header">
+                        <h2>Employee Name</h2>
+                    </div>
+                    <div class="office-name-header">
+                        <h2>Office</h2>
+                    </div>
+                    <div class="assigned-window-header">
+                        <h2>Assigned Window</h2>
+                    </div>
+                    <div class="transactions-header">
+                        <h2>Completed Transactions</h2>
+                    </div>
+                    <div class="action-header">
+                        <h2>Actions</h2>
+                    </div>
+                </div>
+                
+                <div class="user-list-element">
+                    <div class="user-name">
+                        <p>Zhongli Bato</p>
+                    </div>
+                    <div class="office-name">
+                        <p>Library</p>
+                    </div>
+                    <div class="assigned-window">
+                        <p>Window 1</p>
+                    </div>
+                    <div class="complete-transactions">
+                        <p>10</p>
+                    </div>
+                    <div class="user-action-btns">
+                        <div class="view-user-btn action-btn">
+                            <h3>Details</h3>
+                        </div>
+                        <div class="edit-user-btn action-btn">
+                            <h3>Edit</h3>
+                        </div>
+                        <div class="delete-user-btn action-btn">
+                            <h3>Delete</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <dialog id="dialog-add-user" class="modal">
+        <div class="title-bar">
+            <p class="title office" id="dialog-title">Add User</p>
+            <div class="close-button icon-close"></div>
+        </div>
+        <div class="line-separator"></div>
+        <form id="add-user-information">
+            <div class="dialog-body">
+                <div class="entry name">
+                    <label for="employee-name" class="form-label">Employee Name</label>
+                    <input type="text" id="employee-name" name="user_name" placeholder="Name" required>
+                </div>
+                <div class="entry">
+                    <label for="assigned-office" class="form-label">Assigned Office</label>
+                    <select name="assigned_office" id="assigned-office" required>
+                        <option value="" selected>Select office</option>
+                        <option value="library">Library</option>
+                        <option value="registrar">Registrar</option>
+                        <option value="admissions">Admissions</option>
+                    </select>
+                </div>
+                <div class="entry">
+                    <label for="assigned-window">Assigned Window</label>
+                    <select name="assigned_window" id="assigned-window" required>
+                        <option value="" selected>Select window</option>
+                        <option value="window-1">Window 1</option>
+                        <option value="window-2">Window 2</option>
+                        <option value="window-3">Window 3</option>
+                        <option value="window-4">Window 4</option>
+                    </select>
+                </div>
+        </form>
+        </div>
+        <div class="action-bar">
+            <button class="close-button go-back" name="cancel" type="button" value="">Cancel</button>
+            <button class="button-right add-button" name="add_user" type="submit" form="add-user-information" value="Submit">Add User</button>
+        </div>
+    </dialog>
+    <dialog id="dialog-edit-user" class="modal">
+        <div class="title-bar">
+            <p class="title office" id="dialog-title">Edit User</p>
+            <div class="close-button icon-close"></div>
+        </div>
+        <div class="line-separator"></div>
+        <form id="user-information">
+            <div class="dialog-body">
+                <div class="entry name">
+                    <label for="employee-name" class="form-label">Employee Name</label>
+                    <input type="text" id="employee-name" name="user_name" required>
+                </div>
+                <div class="entry">
+                    <label for="assigned-office" class="form-label">Assigned Office</label>
+                    <select name="assigned_office" id="assigned-office">
+                        <option value="library">Library</option>
+                        <option value="registrar">Registrar</option>
+                        <option value="admissions">Admissions</option>
+                    </select>
+                </div>
+                <div class="entry">
+                    <label for="assigned-window">Assigned Window</label>
+                    <select name="assigned_window" id="assigned-window">
+                        <option value="window-1">Window 1</option>
+                        <option value="window-2">Window 2</option>
+                        <option value="window-3">Window 3</option>
+                        <option value="window-4">Window 4</option>
+                    </select>
+                </div>
+        </form>
+        </div>
+        <div class="action-bar">
+            <button class="close-button go-back" name="cancel" type="button" value="">Cancel</button>
+            <button class="button-right save-changes" name="save_changes" type="submit" form="user-information" value="Submit">Save Changes</button>
+        </div>
+    </dialog>
+    <dialog id="dialog-delete-user" class="modal">
+        <div class="title-bar">
+            <div>
+                <p class="title office" id="dialog-title">Warning</p>
+            </div>
+            <div class="close-button icon-close"></div>
+        </div>
+        <div class="line-separator"></div>
+        <div class="dialog-body">
+            <p><span>Confirm delete this user?</span> This action cannot be undone.</p>
+        </div>
+        <div class="action-bar">
+            <button class="close-button go-back" name="cancel" type="button" value="">Cancel</button>
+            <button class="button-right delete-user" name="delete_user" type="submit" value="Submit">Delete User</button>
+        </div>
+    </dialog>
+</body>
+</html>

@@ -1,0 +1,168 @@
+html, body { 
+    margin: unset;
+    padding: unset;
+    background-color: #ffffff;
+    /* mockup uses diff font, check later */
+    font-family: 'Montserrat', 'Courier New', Courier, monospace;
+}
+
+.pubqueue-header {
+    width: auto;
+    background-color: #35408e;
+    border-bottom: 10px solid #ffd41c;
+    color: #ffffff;
+    text-align: center;
+    align-content: center;
+    min-height: 50px;
+    text-transform: uppercase;
+}
+
+.pubqueue-header h1 {
+    margin: 0;
+}
+
+.officewindows-container {
+    margin: 20px 90px;
+    display: grid;
+    row-gap: 10px;
+}
+
+/* FOR WINDOW-UP AND WINDOW-DOWN: interchange display values between flex (when visible) and none when not visible. */
+.window-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.window-up {
+    background-color: #35408e;
+    color: #ffffff;
+}
+
+.window-down {
+    display: none;
+    background-color: #d2d2db;
+    color: #f6f6f6;
+}
+
+.window p, .window h2 {
+    margin: unset;
+}
+
+.window h2 {
+    padding: 10px 20px 0 20px;
+    font-weight:normal;
+    font-size: 15px;
+}
+
+.window p {
+    padding: 0 20px 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.now-serving p {
+    margin: unset;
+}
+
+.now-serving {
+    align-content: center;
+    padding: 0 40px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.queue-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 90px;
+    column-gap: 40px;
+}
+
+.q-cont {
+    display: grid;
+    row-gap: 15px;
+}
+
+.queue-element {
+    display: grid;
+    grid-template-columns: 70px auto;
+}
+
+.q-num {
+    text-align: center;
+    font-size: 25px;
+    align-content: center;
+    color: #5f6368;
+}
+
+.q-num h3 {
+    margin: unset;
+}
+
+.q-code {
+    background-color: #f4f6fc;
+    color: #35408e;
+    padding: 0 33px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.q-code p {
+    margin: 10px 0;
+}
+
+.queue-div {
+    border-top: 2px dashed #d2d2db;
+    margin: 20px 90px;
+}
+
+.on-break-notif {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 22vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(53,64,142,0.4);
+}
+
+.break-container {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width: 55%;
+    text-align: center;
+    padding: 45px 0;
+    color: #35408e;
+}
+
+.break-container hr {
+    color: #d2d2db;
+}
+
+.break-container h1, .break-container p {
+    margin: unset;
+}
+
+.break-container .service {
+    margin-top: 20px;
+    font-size: 45px;
+}
+
+.break-container h1 {
+    font-weight: 800;
+    font-size: 85px;
+    margin-bottom: 20px;
+}
+
+.break-container .service-resume {
+    font-weight: 700;
+    font-size: 75px;
+    margin-bottom: 10px;
+}
